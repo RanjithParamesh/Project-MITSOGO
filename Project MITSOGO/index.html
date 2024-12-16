@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark background fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-5" href="#"><b class="logo">hexnode</b></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            Dark offcanvas
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#whyHexnode"
+                >Why Hexnode</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featuresSection">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#supportedPlatforms">Platforms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviewSection">Customers</a>
+            </li>
+          </ul>
+          <a
+            href="https://www.hexnode.com/mobile-device-management/cloud/signup"
+          >
+            <button class="nav-bar-button mx-5" type="submit">
+              14 DAY FREE TRIAL
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--header-->
+  <div class="header-bground">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 d-flex order-1 order-lg-2">
+          <img class="header-cover-image" src="HeaderTab.png"/>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1">
+          <div>
+            <h1 class="header-content">Turn your devices into<br/> kiosks in a few minutes <br/> with Hexnode UEM</h1>
+            <div class="input-container">
+              <input class="input-box" type="email" placeholder="Your Work Email">
+              <button class="header-button">GET STARTED NOW!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Header bottom content-->
+  <div class="Header-bottom-container" id="whyHexnode">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex flex-row justify-content-start">
+          <div class="vl-line">
+            <img src="idc.png"/>
+            <p class="header-bottom-content">Hexnode is listed as a leader an a major player in IDC Marketscape UEM vendors Assessment Reports 2024.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-row justify-content-center">
+          <div class="vl-line">
+            <img src="gartner.png"/>
+            <p class="header-bottom-content">Hexnode mentioned as a Notable Vendor in Midmarket Context: Magic Quadrant for Unified Endpoint Management tools 2022.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-row justify-content-end">
+          <div>
+            <img class="header-bottom-logo-forrester" src="forrester.png"/>
+            <p class="header-bottom-content">Forrester includes Hexnode as a notable Vendor in The Unified Endpoint Management Landscape, Q3 2023.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Features sections-->
+
+<div class="platforms-section" id="featuresSection">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-8 m-5">
+        <h1 class="platforms-head">What additional possibilities does the Kiosk mode offer?</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 my-3">
+        <div class="platform-img-container d-none d-lg-block d-xl-block">
+          <img
+            src="./offerImg1.png"
+            alt="Android Platform"
+            class="platform-image active"
+            data-platform="android"
+          />
+          <img
+            src="./offerImg2.png"
+            alt="iOS Platform"
+            class="platform-image"
+            data-platform="ios"
+          />
+          <img
+            src="./offerImg3.png"
+            alt="macOS Platform"
+            class="platform-image "
+            data-platform="macos"
+          />
+          <img
+            src="./offerImg4.png"
+            alt="Windows Platform"
+            class="platform-image"
+            data-platform="windows"
+          />
+          <img
+            src="./offerImg5.png"
+            alt="tvOS Platform"
+            class="platform-image"
+            data-platform="tvos"
+          />
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="accordion accordion-flush" id="platformAccordian">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="platform-item accordion-button"
+                type="button"
+                data-platform="android"
+                data-bs-toggle="collapse"
+                data-bs-target="#android"
+                aria-expanded="false"
+                aria-controls="android"
+              >
+                <b class="kiosk-btn-heading">Effortless kiosk deployment & management</b>
+              </button>
+            </h2>
+            <div
+              id="android"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#platformAccordian"
+            >
+              <div class="accordion-body">
+                <div>
+                  <img
+            src="./offerImg1.png"
+            alt="Android Platform"
+            class="platform-image active d-lg-none"
+            data-platform="android"
+          />
+                  <p class="kiosk-btn-content">
+                    Deploy kiosk-enabled devices straight out of the box.
+                    Flash a custom Android Enterprise, Samsung Knox or ROM with 
+                    Hexnode App on the devices by collaborating with OEM vendors who provide specially configured ROMs.
+                  </p>
+                  <p class="acc-text">TRY FOR FREE > </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="platform-item accordion-button collapsed"
+                type="button"
+                data-platform="ios"
+                data-bs-toggle="collapse"
+                data-bs-target="#ios"
+                aria-expanded="false"
+                aria-controls="ios"
+              >
+                <b class="kiosk-btn-heading">Customized interface for brand visibility</b>
+              </button>
+            </h2>
+            <div
+              id="ios"
+              class="accordion-collapse collapse"
+              data-bs-parent="#platformAccordian">
+              <div class="accordion-body">
+                <div>
+                  <img src="./offerImg2.png" alt="iOS Platform" class="platform-image d-lg-none" data-platform="ios"/>
+                  <p class="kiosk-btn-content">
+                    Create a locked-down environment with customized interface. Maximize
+                     brand visibility and leave a lasting impression by showcasing products,
+                      services and key messages directly to users through the customized interface.
+                  </p>
+                  <p class="acc-text">TRY FOR FREE ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="platform-item accordion-button collapsed"
+                type="button"
+                data-platform="macos"
+                data-bs-toggle="collapse"
+                data-bs-target="#macos"
+                aria-expanded="false"
+                aria-controls="macos"
+              >
+                <b class="kiosk-btn-heading">What more can you do with Hexnode kiosk?</b>
+              </button>
+            </h2>
+            <div
+              id="macos"
+              class="accordion-collapse collapse"
+              data-bs-parent="#platformAccordian"
+            >
+              <div class="accordion-body">
+                <div>
+                  <img
+            src="./offerImg3.png"
+            alt="macOS Platform"
+            class="platform-image d-lg-none"
+            data-platform="macos"
+          />
+                  <p class="kiosk-btn-content">
+                    Ensure compliance of your devices by remotely deploying the latest
+                    OS version while the device is still in kiosk mode. Prevent your 
+                    data from falling into the wrong hands even in case of device loss/theft
+                    with the various remote management features.
+                  </p>
+                  <p class="acc-text">TRY FOR FREE ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="platform-item accordion-button collapsed"
+                type="button"
+                data-platform="windows"
+                data-bs-toggle="collapse"
+                data-bs-target="#windows"
+                aria-expanded="false"
+                aria-controls="windows"
+              >
+                <b class="kiosk-btn-heading">Secure and update your app ecosystem</b>
+              </button>
+            </h2>
+            <div
+              id="windows"
+              class="accordion-collapse collapse"
+              data-bs-parent="#platformAccordian"
+            >
+              <div class="accordion-body">
+                <div>
+                  <img
+            src="./offerImg4.png"
+            alt="Windows Platform"
+            class="platform-image d-lg-none"
+            data-platform="windows"
+          />
+                  <p class="kiosk-btn-content">
+                    Streamline the deployment and management on apps on your kiosk devices. 
+                    Save your time and effort, ensure security and improve your efficiency 
+                    using Hexnode's silent app installation and update features.
+                  </p>
+                  <p class="acc-text">TRY FOR FREE ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="platform-item accordion-button collapsed"
+                type="button"
+                data-platform="tvos"
+                data-bs-toggle="collapse"
+                data-bs-target="#tvos"
+                aria-expanded="false"
+                aria-controls="tvos"
+              >
+                <b class="kiosk-btn-heading">Provide an easy-to-use interface for end-users</b>
+              </button>
+            </h2>
+            <div
+              id="tvos"
+              class="accordion-collapse collapse"
+              data-bs-parent="#platformAccordian"
+            >
+              <div class="accordion-body">
+                <div>
+                  <img
+            src="./offerImg5.png"
+            alt="tvOS Platform"
+            class="platform-image d-lg-none"
+            data-platform="tvos"
+          />
+                  <p class="kiosk-btn-content">
+                    Give your end-users the power to control their devices without overwhelming
+                    them with options. An intuitive interface to let them access only the 
+                    essential settings they need. Make it easy for them to unlock the full 
+                    potential of your devices hassle-free.
+                  </p>
+                  <p class="acc-text">TRY FOR FREE ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="customer-review-section" id="reviewSection">
+  <div style="height: 40px"></div>
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="platforms-head">Why should you choose Hexnode?</h1>
+      </div>
+      <div class="col-12">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="testimonial">
+                <img
+                  class="client-image"
+                  src="./Justin.webp"
+                  alt="Justin Modrak"
+                />
+                <div class="review-text-container">
+                  <div class="review-container p-3">
+                    <p class="quote">
+                      "Hexnode is of great value. Works <br />
+                      great with Android and iOS!"
+                    </p>
+                  </div>
+                  <div
+                    class="reviewer-details-container p-3 d-flex flex-column justify-content-center align-items-start"
+                  >
+                    <p class="author">Justin Modrak</p>
+                    <p class="role">Technology Coordinator</p>
+                    <p class="organization">
+                      East Troy Community School District
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="testimonial">
+                <img
+                  class="client-image"
+                  src="./Dalibar.webp"
+                  alt="Dalibar"
+                />
+                <div class="review-text-container">
+                  <div class="review-container p-3">
+                    <p class="quote">
+                      "Most complete MDM solution I found, and I <br />
+                        tested many of them, including major <br />
+                        names"
+                    </p>
+                  </div>
+                  <div
+                    class="reviewer-details-container p-3 d-flex flex-column justify-content-center align-items-start"
+                  >
+                    <p class="author">Dalibor krulijac</p>
+                    <p class="organization">
+                      Kameleya LTD
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial">
+                <img
+                  class="client-image"
+                  src="./ChrisRobinson.webp"
+                  alt="Chris"
+                />
+                <div class="review-text-container">
+                  <div class="review-container p-3">
+                    <p class="quote">
+                      "It seems to be in-line with <br />
+                          everything we were looking at"
+                    </p>
+                  </div>
+                  <div
+                    class="reviewer-details-container p-3 d-flex flex-column justify-content-center align-items-start"
+                  >
+                    <p class="author">Chris Robinson</p>
+                    <p class="organization">
+                      EExecutive Account Manager, NCS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="logo-container">
+        <div class="logo-scroll">
+          <div class="logo-scroll__wrapper">
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/gorillas.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/hilton.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/wolt.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/saic.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/polaris.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/lowes.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/wolt.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/wolt.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/gorillas.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/hilton.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/wolt.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/saic.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/polaris.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/lowes.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/wolt.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/costco.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/wolt.svg" />
+            </div>
+            <div class="logo-item">
+              <img src="./Images/merck.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div style="height: 60px"></div> -->
+</div>
+
+
+<!--Platforms Supported column-->
+<div class="platform-images-container d-flex flex-row justify-content-center" id="supportedPlatforms">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="platform-heading">Platforms Supported</h1>
+      </div>
+      <div>
+          <div class="">
+            <img class="platform-images" src="./Images/android.svg"/>
+
+            <img class="platform-images" src="./Images/windows.svg"/>
+          
+            <img class="platform-images" src="./Images/ios.svg"/>
+          
+            <img class="platform-images" src="./Images/android-tv.svg"/>
+          
+            <img class="platform-images" src="./Images/apple-tv.svg"/>
+          
+            <img class="platform-images Platform-firestick-logo" src="./Images/amazon-fire.webp"/>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer column-->
+<div class="footer-bg">
+  <div class="container">
+    <div class="row">
+      <div class="">
+        <h1 class="footer-heading">Sign up and try Hexnode free for 14 days!</h1>
+        <div class="footer-container">
+          <input class="input-box" type="email" placeholder="Your Work Email">
+          <button class="header-button">GET STARTED</button>
+        </div>
+        <p class="footer-para1" style="text-align: center;">No Credit Crads Required. <n class="footer-para2">Request a Demo ></n></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Copyright Column-->
+<div class="copyrights-section">
+  <div class="container-fluid">
+    <div style="height: 20px"></div>
+    <div class="row">
+      <div
+        class="col-12 d-flex flex-row justify-content-between align-items-center"
+      >
+        <div>
+          <p class="footer-text mx-5">Terms of Use Privacy Cookies</p>
+        </div>
+        <div>
+          <p class="footer-text mx-5">
+            Copyright © 2024 Mitsogo Inc. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--Link JS-->
+  <script src="./script.js"></script>
+<!--Bootstrap CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
